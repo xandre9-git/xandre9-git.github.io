@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Xandre's Page
+	</title>
+</head>
+<h1>Xandre's Page</h1>
+<main>
+Hello. This HTML project is to display all the HTML and HTML5 material I have learned from freeCodeCamp.
+</main>
+<body>
+<h2 id="Elements">Elements</h2> 
+This section will display all the elements I have learned in HTML and HTML 5
+
+<ul>
+	<li>Tags are closed with &lt;/&gt;</li>
+	<li>The Elements heading was made with a &lt;h1&gt; tag. There are a total of 6 heading tags, &lt;h1&gt; through &lt;h6&gt;</li>
+	<li>Paragraphs are made using &lt;p&gt; tags.</li>
+	<li>Commenting HTML is done by inserting &lt;!-- text to developer which wont be seen by web page user --&gt; 
+		<!-- this shouldn't be visible--></li>
+	<li>HTML5 has more descriptive tags; &lt;main&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;video&gt;, &lt;article&gt;, 
+		&lt;section&gt; and more</li>
+	<li>&lt;main&gt; tag is used to help search engines find the main content of the webpage</li>
+	<li>Images are inserted into websites by using an &lt;img&gt; element which points to a <i>src</i> (source) attribute.</li>
+	<li>To link an image in the webpage (such as the one seen below) you would need to input 
+		"&lt;img src="https://www.example.com/image.jpg" alt="something 	descriptive."&gt; into the HTML. They are self closing tags. 
+		The <i>alt</i> attribute is used for screen readers to improve accessibility and to show if the image fails 	to load.</li>
+  <p> 
+	<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML5">
+  </p>	
+	<li>The &lt;a&gt; (anchor) element is used to link outside content to the page. They use a destination web address call an <i>href</i>
+		 attribute.
+	&lt;a href="https://www.google.com"&gt; Google&lt;/a&gt;.</li>
+	<br><a href="https://www.google.com">Google</a><p>
+	<li>Nesting an anchor element within a paragraph is easy. Find the section you would like to insert a link by inserting 
+		&lt;a href="https://www.google.com"&gt; click 			here &lt;/a&gt; for users to click. If you would like for the link to open 
+		in a new tab, change the code to have an (<i>target="_blank"</i>) attribute before the 			<i>href</i> attribute like so: 
+		&lt;a
+		 target="_blank" href="www.google.com"&gt;click here&lt;/a&gt;. </li><br>
+
+	<b>Same Page Example</b>: You can find a free code camp using <a href="https://www.freecodecamp.org"> this link</a>.<br>
+	<b>New Tab Example</b>: You can find a free code camp using <a target="_blank" href="https://www.freecodecamp.org"> this link</a>.
+</p></br>
+	<li>Anchor &lt;a&gt; elements can also be used to jump to different sections within the webpage. You must assign a <i>href</i> 
+		attribute to a hashtag (#) plus the 	<i>id</i> attribute you want to link to. The <i>id</i> attribute must also be set within 
+		the element you wish linked.</li> 
+  <p>
+	<b>Example</b>: <a href="#Elements">Elements</a>
+	<li>You can make a Dead Link within an &lt;a&gt; element by using a '#' symbol. This is useful for preparation when you do not have 
+		the link available you would like to 		reference: &lt;a href="#"&gt;<br><a href="#">Dead Link</a>
+  </p>  
+  <p>
+	<li>Images can be turned into links by nesting the image within an &lt;a&gt; element by typing 
+		&lt;a href="www.wherever.com/"&gt;&lt;img src="something.com/yeah.jpg" 	alt="how to make images become links"&gt;&lt/a&gt;<br>
+	</li>
+	<a href="https://www.freecodecamp.org">
+		<img src="https://res-4.cloudinary.com/crunchbase-	production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ikqra03zdnggljdu5vv0" alt=freeCodeCamp></a>
+	<li>Unordered lists, or bullet style lists, can be created using the &lt;ul&gt; unordered list element. Each bullet can be created using the &lt;li&gt; tag. 
+		This bullet 		was made using the &lt;li&gt; tag.</li>
+	<li>Ordered lists are created using the &lt;ol&gt; tags. &lt;li&gt; tags are used to list items numerically within the &lt;ol&gt; tags.</li></ul>
+  </p>
+  <p>
+	<ol>
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	</ol>
+
+	<ul>
+	<li>Creating a text field for users to input text requires the input element and the <i>type</i> attribute. <b>Example</b>: &lt;input type="text"&gt;.
+		 Input elements are self closing.</li>
+	<input type="text"><p>
+	</p>
+	<li><i>Placeholder</i> text is what is displayed before the user has entered anything into the text field. 
+		<b>Example</b>: &lt;input type="text" placeholder="First Name"&gt;</li>
+		<input type="text" placeholder="First Name"><p>
+					</p>
+	<li>Creating web forms is done with the form element and the <i>action</i>. They are used to submit data to a server. 
+		<b>Example</b>: &lt;form action="/url-where-data-is-submitted"&gt;&lt;/form&gt;</li>
+	<form action="/submit-census-data">
+		<input type="text" placeholder="First Name">
+			</form><p></p>
+	<li>Adding a submit button to a form is done with the &lt;button&gt; element and <i>type</i> attribute. Place button element within the form element desired. 
+		<b>Example</b>: &lt;button type="Submit"&gt;Submit&lt;/button&gt;</li>			
+	<form action="/submit-census-data">
+		<input type="text" placeholder="Email Address"><button type="submit">Submit</button>
+	</form><p></p>
+		<li>Forms can be required to be filled out before submittal with the <i>required</i> attribute. 
+			<b>Example</b>: &lt;input type="text" required&gt;</li>
+	<form action="/submit-html-data">
+		<input type="text" required placeholder="This must be filled out.">
+	</form>
+	<p>
+		<li>Radio buttons can be used when you only want one response from a selection of responses. They are a type of input which can be nested in &lt;label&gt; elements.
+		This causes the radio button to be associated with the label. The related radio buttons should have the same <i>name</i> attribute so that they are grouped together.
+		Radio groups allow for one response to be selected and the other to be deselected. 
+		<p><b>Example</b>:<br>&lt;label for="indoor"&gt;<br>&lt;input type="radio" name="indoor-outdoor"&gt;Indoors<br>&lt;input type="radio" name="indoor-outdoor"&gt;Outdoors<br>&lt;/label&gt;
+			<p>Do you prefer to do exercises indoors or outdoors?<br>
+				<label for="indoor">
+					<input type="radio" name="indoor-outdoor">Indoors<br>
+				</label>
+					<label for ="outdoor">
+						<input type="radio" name="indoor-outdoor">Outdoors
+				</label>
+
+		</p>
+		<li>Creating checkboxes can be accomplished by the input type 'checkboxes'. They are used for responses that require more than one answer.
+			Checkboxes can be nested in their own labels. This will associate the checkbox element with the respective label. Related checkbox elements
+			should have the same <i>name</i> attribute. It is good practice to put a <i>for</i> attribute on the label to match the <i>id</i> attribute
+			of the associated input element.
+			<p>
+			<b>Example</b>:<br>&lt;label for="situps"&gt;<br>&lt;input id="situps" name="likes" type="checkbox"&gt;Situps<br>&lt;/label&gt;<p>
+			Which of these exercises do you like?<br>
+			<label for="situps"><input id="situps" name="likes" type="checkbox">Situps</label><br>
+			<label for="pushups"><input id="pushups" name="likes" type="checkbox">Pushups</label><br>
+			<label for="squats"><input id="squats" name="likes" type="checkbox">Squats</label>
+		</li>
+		<p>
+		<li>Radio and checkboxes inputs report their values from the <i>value</i> attribute.<p><b>Example</b>:<br>
+			&lt;label for="indoor"&gt;<br>&lt;input id="indoor" value="indoor" type="radio" name="indoor-outdoor"&gt;Indoor<br>&lt;/label&gt;<p>
+			
+		<label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor</label><br>
+		<label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor</label><br>
+		<label for="situps"><input id="situps" value="situps" type="checkbox" name="likes">Situps</label><br>
+		<label for="pushups"><input id="pushups" value="pushups" type="checkbox" name="likes">Pushups</label><br>
+		<label for="squats"><input id="squats" value="squats" type="checkbox" name="likes">Squats</label><br></li></p>
+		<p>
+		<li>A radio button or checkbox can be selected by default.
+			<p><b>Example</b>:<br>
+			&lt;input type="radio" name="default" checked&gt;<p>
+				Please choose your gender.<br>
+				<input id="male" value="male" type="radio" name="sex" checked>Male<br>
+				<input id="female" value="female" type="radio" name="sex">Female<p>
+					What is your favorite soda?<br>
+					<input id="coke" value="coke" type="checkbox" name="soda">Coca-Cola<br>
+					<input id="pepsi" value="pepsi" type="checkbox" name="soda" checked>Pepsi
+				</p>
+			</p></li><li>The &lt;div&gt; element is a general purpose container element for other elements. It is closed with a &lt;/div&gt; tag.<p>
+				<b>Example</b>:<br>
+				&lt;div&gt;<br>
+				&lt;label for="indoor"&gt;
+				<br>&lt;input type="radio" name="indoor-outdoor"&gt;Indoors
+				<br>&lt;input type="radio" name="indoor-outdoor"&gt;Outdoors<br>
+				&lt;/label&gt;<br>
+				&lt;/div&gt;<p>
+					<li>All html pages tell browsers which version of html your page is using. This is done by declaring the DOCTYPE of a page with 
+						the &lt;!-- DOCTYPE ...&gt; tag where ... is the version of html. 
+						After declaration of the doctype any remaining html code needs to be wrapped in html tags: &lt;html&gt;&lt;/html&gt;
+					</li>
+					<p><b>Example</b>:<br>
+						&lt;!-- DOCTYPE&gt;<br>
+						&lt;html&gt;<br>
+						&lt;/html&gt;<p>
+		<li>Defining the Head and Body of an html document is done within the html element through &lt;head&gt; and &lt;body&gt;. The head element includes
+			any markup information about the page. It also includes all head elements: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, 
+			&lt;script&gt;, and &lt;base&gt;. The markup relating to content of the page goes within the &lt;body&gt; element. </li>
+			<p><b>Example</b>:<br>
+			&lt;!-- DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- metadata elements --&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- page contents --&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+				&lt;/html&gt;
+						</p>
+
+				</p>
+
+			</p></li>
+		</p>
+				</p>
+	</p>
+</body>
+</html>
