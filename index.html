@@ -15,47 +15,62 @@ This section will display all the elements I have learned in HTML and HTML 5
 
 <ul>
 	<li>Tags are closed with &lt;/&gt;</li>
-	<li>The Elements heading was made with a &lt;h1&gt; tag. There are a total of 6 heading tags, &lt;h1&gt; through &lt;h6&gt;</li>
+	<li>The Elements heading was made with a &lt;h1&gt; tag. There are a total of 6 heading tags, &lt;h1&gt; 
+		through &lt;h6&gt;</li>
 	<li>Paragraphs are made using &lt;p&gt; tags.</li>
 	<li>Commenting HTML is done by inserting &lt;!-- text to developer which wont be seen by web page user --&gt; 
 		<!-- this shouldn't be visible--></li>
-	<li>HTML5 has more descriptive tags; &lt;main&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;video&gt;, &lt;article&gt;, 
+	<li>HTML5 has more descriptive tags; &lt;main&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;video&gt;, 
+		&lt;article&gt;, 
 		&lt;section&gt; and more</li>
 	<li>&lt;main&gt; tag is used to help search engines find the main content of the webpage</li>
-	<li>Images are inserted into websites by using an &lt;img&gt; element which points to a <i>src</i> (source) attribute.</li>
+	<li>Images are inserted into websites by using an &lt;img&gt; element which points to a <i>src</i> (source) 
+		attribute.</li>
 	<li>To link an image in the webpage (such as the one seen below) you would need to input 
-		"&lt;img src="https://www.example.com/image.jpg" alt="something 	descriptive."&gt; into the HTML. They are self closing tags. 
+		"&lt;img src="https://www.example.com/image.jpg" alt="something 	descriptive."&gt; into the HTML. 
+		They are self closing tags. 
 		The <i>alt</i> attribute is used for screen readers to improve accessibility and to show if the image fails 	to load.</li>
   <p> 
 	<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML5">
   </p>	
-	<li>The &lt;a&gt; (anchor) element is used to link outside content to the page. They use a destination web address call an <i>href</i>
+	<li>The &lt;a&gt; (anchor) element is used to link outside content to the page. They use a destination web address 
+		call an <i>href</i>
 		 attribute.
 	&lt;a href="https://www.google.com"&gt; Google&lt;/a&gt;.</li>
 	<br><a href="https://www.google.com">Google</a><p>
-	<li>Nesting an anchor element within a paragraph is easy. Find the section you would like to insert a link by inserting 
-		&lt;a href="https://www.google.com"&gt; click 			here &lt;/a&gt; for users to click. If you would like for the link to open 
-		in a new tab, change the code to have an (<i>target="_blank"</i>) attribute before the 			<i>href</i> attribute like so: 
+	<li>Nesting an anchor element within a paragraph is easy. Find the section you would like to insert a link by 
+		inserting 
+		&lt;a href="https://www.google.com"&gt; click 			here &lt;/a&gt; for users to click. 
+		If you would like for the link to open 
+		in a new tab, change the code to have an (<i>target="_blank"</i>) attribute before the 			
+		<i>href</i> attribute like so: 
 		&lt;a
 		 target="_blank" href="www.google.com"&gt;click here&lt;/a&gt;. </li><br>
 
-	<b>Same Page Example</b>: You can find a free code camp using <a href="https://www.freecodecamp.org"> this link</a>.<br>
-	<b>New Tab Example</b>: You can find a free code camp using <a target="_blank" href="https://www.freecodecamp.org"> this link</a>.
+	<b>Same Page Example</b>: You can find a free code camp using <a href="https://www.freecodecamp.org"> this link</a>.
+	<br>
+	<b>New Tab Example</b>: You can find a free code camp using <a target="_blank" href="https://www.freecodecamp.org">
+	this link</a>.
 </p></br>
-	<li>Anchor &lt;a&gt; elements can also be used to jump to different sections within the webpage. You must assign a <i>href</i> 
-		attribute to a hashtag (#) plus the 	<i>id</i> attribute you want to link to. The <i>id</i> attribute must also be set within 
+	<li>Anchor &lt;a&gt; elements can also be used to jump to different sections within the webpage. You must assign a
+		<i>href</i> 
+		attribute to a hashtag (#) plus the 	<i>id</i> attribute you want to link to. The <i>id</i> attribute
+		must also be set within 
 		the element you wish linked.</li> 
   <p>
 	<b>Example</b>: <a href="#Elements">Elements</a>
-	<li>You can make a Dead Link within an &lt;a&gt; element by using a '#' symbol. This is useful for preparation when you do not have 
+	<li>You can make a Dead Link within an &lt;a&gt; element by using a '#' symbol. This is useful for preparation when
+		you do not have 
 		the link available you would like to 		reference: &lt;a href="#"&gt;<br><a href="#">Dead Link</a>
   </p>  
   <p>
 	<li>Images can be turned into links by nesting the image within an &lt;a&gt; element by typing 
-		&lt;a href="www.wherever.com/"&gt;&lt;img src="something.com/yeah.jpg" 	alt="how to make images become links"&gt;&lt/a&gt;<br>
+		&lt;a href="www.wherever.com/"&gt;&lt;img src="something.com/yeah.jpg" 	alt="how to make images become links"
+		&gt;&lt/a&gt;<br>
 	</li>
 	<a href="https://www.freecodecamp.org">
-		<img src="https://res-4.cloudinary.com/crunchbase-	production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ikqra03zdnggljdu5vv0" alt=freeCodeCamp></a>
+<img src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ikqra03zdnggljdu5vv0" 
+     alt=freeCodeCamp></a>
 	<li>Unordered lists, or bullet style lists, can be created using the &lt;ul&gt; unordered list element. Each bullet can be created using the &lt;li&gt; tag. 
 		This bullet 		was made using the &lt;li&gt; tag.</li>
 	<li>Ordered lists are created using the &lt;ol&gt; tags. &lt;li&gt; tags are used to list items numerically within the &lt;ol&gt; tags.</li></ul>
