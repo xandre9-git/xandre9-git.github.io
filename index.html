@@ -24,6 +24,17 @@
 		font-family: lobster, serif;
 	}
 
+	.larger-image {
+		width: 400px;
+	}
+
+	.thick-hotpink-border {
+		border-width: 5px;
+		border-color:palevioletred;
+		border-style: solid;
+		width:100px
+	}
+
 </style>	
 <head>
 	<title>
@@ -56,7 +67,7 @@ This section will display all the elements I have learned in HTML and HTML 5.
 		They are self closing tags. 
 		The <i>alt</i> attribute is used for screen readers to improve accessibility and to show if the image fails 	to load.</li>
   <p> 
-	<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML5">
+	<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML5" class="larger-image">
   </p>	
 	<li>The &lt;a&gt; (anchor) element is used to link outside content to the page. They use a destination web address 
 		call an <i>href</i>
@@ -95,7 +106,7 @@ This section will display all the elements I have learned in HTML and HTML 5.
 	</li>
 	<a href="https://www.freecodecamp.org">
 <img src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ikqra03zdnggljdu5vv0" 
-     alt=freeCodeCamp></a>
+     alt="freeCodeCamp" class="thick-hotpink-border"></a>
 	<li>Unordered lists, or bullet style lists, can be created using the &lt;ul&gt; unordered list element. Each bullet can be created using the &lt;li&gt; tag. 
 		This bullet 		was made using the &lt;li&gt; tag.</li>
 	<li>Ordered lists are created using the &lt;ol&gt; tags. &lt;li&gt; tags are used to list items numerically within the &lt;ol&gt; tags.</li></ul>
@@ -268,6 +279,26 @@ the style tags at the beginning of the HTML document. Afterwards, the unique fon
 <b>Specifying How Fonts Should Degrade</b><br>
 Font family can be set in a way that if one font is not available another is used.<p>
 "font-family: FAMILY_NAME, GENERIC_NAME;""</p>
+<p><b>Sizing Your Images</b><br>
+Image sizes can be adjusted through CSS. Width is one of the specifications which can be modified.<p>
+<br>
+	&nbsp;.larger-image {<br>
+	  &nbsp;&nbsp;width: 500px;<br>
+	&nbsp;}<br>
+   </p>
+  <p><b>Adding Borders Around Elements</b><br>
+  Borders can be added to your elements.<p><br>
+	<img src="https://cdn4.vectorstock.com/i/1000x1000/51/73/protest-symbol-power-sign-vector-21105173.jpg" alt="fist power" 
+	class="smaller-image, thick-hotpink-border"><p>
+	.thick-hotpink-border {<br>
+		&nbsp;&nbsp;border-width: 5px;<br>
+		&nbsp;&nbsp;border-color:palevioletred;<br>
+		&nbsp;&nbsp;border-style: solid;<br>
+	}
+	</p>
+  </p>
+</p>
+
 </p>
 </p>
 </body>
