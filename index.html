@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">	
+<style>
+	body {
+		background-color:black;
+		color:lightgray;
+		font-family: calibri;
+	}
+
+	.green-text {
+		color:limegreen;
+	}
+
+	.purple-text {
+		color:mediumpurple;
+	}
+
+	.huge {
+		font-size: 40px;
+	}
+
+	.lobster {
+		font-family: lobster, serif;
+	}
+
+</style>	
 <head>
 	<title>
 		Xandre's Page
@@ -7,11 +32,11 @@
 </head>
 <h1>Xandre's Page</h1>
 <main>
-Hello. This HTML project is to display all the HTML and HTML5 material I have learned from freeCodeCamp.
+Hello. This HTML project is to display all the HTML, HTML5, and CSS material I have learned from freeCodeCamp.
 </main>
 <body>
-<h2 id="Elements">Elements</h2> 
-This section will display all the elements I have learned in HTML and HTML 5
+<h2 id="Elements" class="green-text">Elements</h2> 
+This section will display all the elements I have learned in HTML and HTML 5.
 
 <ul>
 	<li>Tags are closed with &lt;/&gt;</li>
@@ -184,9 +209,66 @@ This section will display all the elements I have learned in HTML and HTML 5
 
 				</p>
 
-			</p></li>
+			</p></li></ul>
 		</p>
 				</p>
 	</p>
+<p>
+<h2 style="color: dodgerblue">CSS</h2>
+This section displays all the CSS code I have been taught. CSS code can be applied in three ways.
+First directly to HTML elements with the <i>style</i> attribute, second by placing CSS rules within 
+style tags inside the HTML document, and lastly by creating a separate external style sheet containing
+all the CSS rules, which is referenced by the HTML document.
+
+</p><b>Changing Color of Text</b><br>
+
+Text color can be done by changing the style. I have changed the CSS header above using:<p>
+&lt;h2 style="color: dodgerblue"&gt;</p>
+<b>Using CSS Selectors to Style Elements</b><br>
+A style tag can be placed at the start of an HTML document to apply CSS to whichever element, class, or id you specify. 
+Below is an example of the CSS selector within the style tags modifying the body element of this page.<p>
+&lt;style&gt;<br>
+&nbsp;body {<br>
+	&nbsp;&nbsp;background-color: black;<br>
+	&nbsp;&nbsp;color: lightgray;<br>
+	}<br>
+&lt;/style&gt;
+</p>
+<p>
+<b>Using a CSS Class to Style an Element</b><br>
+A class can be specified in a style tag by the use of a a dot "." and its name. i.e. ".green-text". This class can be
+applied within the element without the dot, like so:<p>
+&lt;h1 class="green-text"&gt;Elements&lt;/h1&gt;</p>
+<b class="purple-text">Classes Allow Styling of Multiple Elements</b><br>
+Once a class is defined, all HTML elements within the document can use the class as seen above.<p>
+&lt;style&gt;<br>
+&nbsp;.purple-text {<br>
+&nbsp;&nbsp; color: purple;<br>
+}<br>
+&lt;/style&gt;</p>
+<p><b>Changing Font Size</b><br>
+Font <i class="huge">size</i> can be changed as so:<p>
+element {<br>
+&nbsp;font-size: 40px;<br>
+}
+</p>
+<p><b>Changing Font Family</b><br>
+The font family can be changed as so:<br><p>
+element {<br>
+	&nbsp;font-family: calibri;<br>
+	}</p>
+<p>
+<b>Importing Non Standard Web Fonts</b><br>
+<a class="lobster">Custom web fonts</a> can be imported into an HTML page by inserting:
+&lt;link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"&gt; before
+the style tags at the beginning of the HTML document. Afterwards, the unique font can be used as so:<br><p>
+	.lobster {<br>
+		&nbsp;font-family: Lobster;<br>
+		}</p><p>
+<b>Specifying How Fonts Should Degrade</b><br>
+Font family can be set in a way that if one font is not available another is used.<p>
+"font-family: FAMILY_NAME, GENERIC_NAME;""</p>
+</p>
+</p>
 </body>
 </html>
