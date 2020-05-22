@@ -82,6 +82,8 @@
 		border-style: solid;
 		border-color:lightblue;
 		margin-right: 1000px;
+		display: inline-block;
+		width: auto;
 	}
 
 	#pmclock {
@@ -89,6 +91,12 @@
 		margin: 5px 90% 5px 5px;
 		border-style: solid;
 		border-color:peru;
+		display: inline-block;
+		width: auto;
+	}
+
+	#sunny {
+		color:#FFA500;
 	}
 
 	[type='radio'] {
@@ -432,7 +440,10 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 						&nbsp;&nbsp;border-style: solid;<br>
 						&nbsp;&nbsp;border-color:lightblue;<br>
 						&nbsp;&nbsp;margin-right: 1000px;<br>
+						&nbsp;&nbsp;display: inline-block;<br>
+						&nbsp;&nbsp;width: auto;<br>
 					}
+
 					</p>				
 					<p><b>Adjusting Padding and Margins with Clockwise Notation</b><br>
 						Padding and margins for elements can be adjusted side using clockwise notation for top,
@@ -445,6 +456,8 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 							&nbsp;&nbsp;margin: 5px 90% 5px 5px;<br>
 							&nbsp;&nbsp;border-style: solid;<br>
 							&nbsp;&nbsp;border-color: peru;<br>
+							&nbsp;&nbsp;display: inline-block;<br>
+							&nbsp;&nbsp;width: auto;<br>
 						}
 						<p><b>Using Attribute Selectors to Style Elements</b><br>
 							Attributes such as radio and checkboxes can be used as selectors in CSS styles to
@@ -452,13 +465,89 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 								[type='radio'] {<br>
 									&nbsp;&nbsp;margin: 10px;<br>
 								}
+						</p>
+
+						<p><b>Understanding Absolute vs Relative Measurements</b><br>
+							Besides px, CSS has a number of length units for use. Length units can be absolute or relative.
+							Absolute correspond to measurements like in for inch and mm for millimeter. Relative units are based on
+							another length value, such as em, which is relative to an element's font.
+						</p>
+
+						<p><b>Styling the HTML Body Element</b><br>
+							All HTML pages have a body element which can be styled. This webpage has a body element styled with
+							a black background color.<p>
+								body {<br>
+									&nbsp;&nbsp;background-color: black;<br>
+								  }
+						</p>
+
+						<p><b>Prioritizing One Style Over Another</b><br>
+							Multiple styles applied to one HTML element will result in conflict. If multiple classes are applied, the second
+							declaration will always take precedence over the first. Multiple class attributes to HTML elements are done with 
+							a space between them.
+							<p>class="class1 class2"</p>
+							An id attribute, however, will always take precedence over a class.<p>
+								#orange-text {<br>
+								&nbsp;&nbsp;color: orange;<br>
+								}<p>
+								&lt;h1 id="orange-text"&gt;<br>
+								</p>
+							<p>Inline styles can also be used to override class declarations.<p>
+								&lt;h1 style="color: teal;"&gt;<br>
+							</p>
+							If it is imperative for one style to take precedence over all, the !important keyword. This ensures
+							100% the declaration you have specified will be used.<p>
+								color: red !important;
+							</p>
+
+							<p><b>Using Hex Code and RGB Values for <span id="sunny">Colors</span></b><br>
+								Hexadecimal code are based of 16 numbers. 0-9 for zero to 9 and A,B,C,D,E,F for ten to 
+								fifteen. Six hexadecimal digits are used to represent colors, two for red (R), two for green (G) and 
+								two for blue(B).<p>
+									body {<br>
+									&nbsp;&nbsp;color: #000000; // black<br>
+									}<p>
+								The hexcodes can be mixed to create over 16 million colors. 0 is the lowest which 
+								represents no color and F is the highest number in the code, representing max brightness.<p>
+									#sunny {<br>
+									&nbsp;&nbsp;color:#FFA500; // orange<br>
+									}<p>
+								In addition, RGB can be used instead to specifies colors
+									</p>
+									rgb(0, 0, 0) // white<br>
+									rgb(255, 255, 255) // black
+								</p>
+								<p><b>Using CSS Variables</b><br>
+								</p>To create a CSS variable give it a name with two hyphens in front of it and assign a value.<p>
+									--laptop-color: gray;
+								</p>
+								Existing classes can use this created variable to affect its properties. A class can also be created to 
+								include this variable. To use the custom CSS variable you assign its value to other CSS properties 
+								with a reference of the name given to it.<p>
+									background: var(--laptop-color);
+								</p>
+								A fallback value can be attached to the variable for times when the variable proves
+								to be invalid. This can be useful for debugging.<p>
+									background: var(--laptop-color, black);
+								</p>
+								To improve browser capability it is a good practice to include a browser fall back with your declarations.
+								Place the fallback value right before the declaration you want to use. In this case, a background of red was
+								used before the variable declaration.<p>
+									.red-box {<br>
+										&nbsp;&nbsp;background: red;<br>
+										&nbsp;&nbsp;background: var(--red-color);<br>
+										&nbsp;&nbsp;height: 200px;<br>
+										&nbsp;&nbsp;width:200px;<br>
+									  }
+								</p>
+									</p>
+								</p>
+
+			
 							
 							</p>
-				
 
-					
-						</p>			
-				</p>
+						
 </p>
 
 </p>
