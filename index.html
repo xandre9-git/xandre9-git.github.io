@@ -2,10 +2,23 @@
 <html>
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">	
 <style>
+	:root {
+		--laptop-color: gray;
+		--width-color: purple;
+	}
+
 	body {
 		background-color:black;
 		color:lightgray;
 		font-family: calibri;
+	}
+
+	@media (max-width: 700px) {
+		body {
+			background-color:hotpink;
+			--width-color: purple;
+			color: var(--width-color);
+		}
 	}
 
 	.green-text {
@@ -101,6 +114,16 @@
 
 	[type='radio'] {
 		margin: 10px;
+	}
+
+	#lapgray {
+		background: var(--laptop-color);
+	}
+
+	#lapwht {
+		--laptop-color: white;
+		background: var(--laptop-color);
+		color: black;
 	}
 
 </style>	
@@ -413,7 +436,7 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 			}
 			</p>
 	<p><b>Adding Negative Elements to Margins</b><br>
-				If a margin is set to a negative value, the element it is applied to grows in size.<p>
+		If a margin is set to a negative value, the element it is applied to grows in size.<p>
 				<p></p>
 				<div id="neg">PRACTICE</div><br>
 				#neg {<br>
@@ -425,10 +448,10 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 					&nbsp;&nbsp;text-align: center;<br>
 				}
 				</p>
-				<p><b>Adjusting Padding and Margins for Each Side of Elements</b><br>
-					Padding for elements can be adjusted for each side using <i>padding-top, padding-right, 
-					padding-bottom, and padding-left</i>. The same can be done for margins using: <i>margin-top, margin-right, 
-						margin-bottom, and margin-left.</i>
+	<p><b>Adjusting Padding and Margins for Each Side of Elements</b><br>
+		Padding for elements can be adjusted for each side using <i>padding-top, padding-right, 
+		padding-bottom, and padding-left</i>. The same can be done for margins using: <i>margin-top, margin-right, 
+		margin-bottom, and margin-left.</i>
 					</i><p>
 					<p></p>
 					<div id="padtrbl">PRACTICE</div><br>
@@ -540,17 +563,44 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 										&nbsp;&nbsp;width:200px;<br>
 									  }
 								</p>
-									</p>
-								</p>
+		<p><span id="lapgray"><b>Inherit CSS Variables</b><br>
+		Created variables are available for use inside the selector it was created in. 
+		It can also be used in the selector's descendants. CSS variables are often defined 
+		in the <i>:root</i> element. :root is a pseudo-class selector that matchesw the root 
+		element of the document, normally the html element. Variables created in :root are 
+		available globally and can be accessed from other selectors in the style sheet.</p>
+			:root {<br>
+				&nbsp;&nbsp;--laptop-color: gray<br>
+			}<p>
+			#lapgray {<br>
+				&nbsp;&nbsp;background: var(--laptop-color);<br>
+			}</span>
+		<p>Variables created in :root apply to the whole page. They can be over-written by 
+		setting them again in specific elements.</p>
+			<span id="lapwht">#lapwht {<br>
+				&nbsp;&nbsp;--laptop-color: white;<br>
+				&nbsp;&nbsp;background: var(--laptop-color);<br>
+				&nbsp;&nbsp;color: black;<br>
+			}</span>
+		<p>
+		<b>Using Media Queries to Change Variables</b><br>
+		CSS Variables can be used in media queries. Media queries are used to apply different 
+		styles for different media types/devices. They are used to check things such as the width and 
+		height of the viewport/device, the orientation (portrait or landscape) and the resolution.
+		</p><p>
+			:root {<br>
+				&nbsp;&nbsp;--laptop-color: gray<br>
+				&nbsp;&nbsp;--width-color: purple<br>
+			}<p>
+		</p>
+		@media (max-width: 700px) {<br>
+		&nbsp;&nbsp;body {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: hotpink;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--width-color: purple;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: var(--width-color);<br>
+		&nbsp;&nbsp;	}<br>
+		}
+								
 
-			
-							
-							</p>
-
-						
-</p>
-
-</p>
-</p>
 </body>
 </html>
