@@ -123,3 +123,22 @@
 		background: var(--laptop-color);
 		color: black;
 	}
+
+	h3 {
+		text-align: right;
+		color: purple;
+	}
+
+	h3:hover {
+		color:fuchsia;
+	}
+
+	hr {
+		color: white;
+	}
+
+	.transparent {
+		background-color:rgba(255,99,71,0.35);
+	}
+
+
