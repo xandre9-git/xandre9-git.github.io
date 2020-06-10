@@ -150,4 +150,41 @@
 		opacity: 0.25;
 	}
 
+	.transf {
+		text-transform: capitalize;
+	}
+	
+	.thck {
+		font-weight: 600;
+	}
 
+	.thn {
+		font-weight: 10;
+	}
+
+	.lnht {
+		line-height: 35px;
+	}
+
+	.pshv {
+	}
+
+	.pshv:hover {
+		color: aqua;
+	}
+
+	.posrel {
+		position: relative;
+		top: 10px;
+		left: 300px;
+	}
+
+	section {
+		position: relative;
+	}
+
+	#posabs {
+		position: absolute;
+		top: 2px;
+		left: 100px;
+	}

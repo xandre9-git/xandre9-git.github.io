@@ -548,5 +548,86 @@ Image sizes can be adjusted through CSS. Width is one of the specifications whic
 	.opa {<br>
 		&nbsp;&nbsp;opacity: 0.75;<br>
 	}
-</p>
+	<p>
+	<div class="transf"><b>using 'text-transform' to change text case</b><br></div>
+	The text-transform property in CSS can be used to change text. Lowercase, uppercase,
+	capitalize, initial (which is the default value), inherit (the parent property), and none (the 
+	original text).
+	<p>
+		.transf {<br>
+			&nbsp;&nbsp;text-transform: uppercase;<br>
+		}
+	</p>
+	<p>
+	<b>Using 'font-weight' to Change</b> <span class="thck">Thickness</span>/
+		<span class="thn">Thinness</span><b> of Text</b><br>
+	The font-weight property in CSS is used to change text thickness or thinness.
+	<p>
+		.thck {<br>
+			&nbsp;&nbsp;font-weight: 1000;<br>
+		}
+	</p>
+		.thn {<br>
+			&nbsp;&nbsp;font-weight: 10;<br>
+		}
+	<p>
+	<div class="lnht"><b>Setting the line height of paragraphs</b><br>
+	The line-height property adjusts the height of space between text. 
+	<p>
+		.lnht {<br>
+			&nbsp;&nbsp;line-height: 50px;<br>
+		}
+	</div>	
+	</p>
+	<p>
+	<div class="pshv"><b>Using the Pseudo-Class Hover Selector</b><br>
+	A pseudo-class is a keyword that can be added to selectors to select a specific state 
+	of the selector. One pseudo-class that can be used is hover, which ilicits a command when 
+	the mouse has hovered the affected element.
+	<p>
+		.pshv {<br>
+		}
+	</p>
+		.pshv:hover {<br>
+			&nbsp;&nbsp;color: red;<br>
+		}
+	</div>	
+	<p>
+	<b>Changing An Element's Relative Position</b><br>
+	</p>Block-level elements start on new lines (headings, paragraphs,div, etc.). Inline elements 
+	sit within the surrounding content (images, spans, etc). This is the normal flow of documents 
+	but it can be overriden with the position property. Setting the position of an element to relative 
+	allows specification of how the element should be moved relative to the normal flow of page.
+	<p class="posrel">
+		.posrel {<br>
+			&nbsp;&nbsp;position: relative;<br>
+			&nbsp;&nbsp;bottom: 10px;<br>
+			&nbsp;&nbsp;left: 100px;<br>
+		}<br>
+	</p>
+	<p>
+	<b>Locking An Element's Position with Absolute</b><br>
+	Setting the position of an element to absolute locks the element in place relative to its parent container. 
+	It removes the element from the normal flow and surrounding items ignore it.
+		
+	<section>
+	<p id="posabs">
+		.posabs {<br>
+			&nbsp;&nbsp;position: absolute;<br>
+			&nbsp;&nbsp;bottom: 10px;<br>
+			&nbsp;&nbsp;left: 10px;<br>
+		}<br>
+	</p>
+	</section>
+	<p>
+	<b>Fixing An Element to Edge of Browser Window</b><br>
+	</p>Elements can be fixed to location on the browers using the fixed value for the position
+	<p class="posrel">
+		.posrel {<br>
+			&nbsp;&nbsp;position: relative;<br>
+			&nbsp;&nbsp;bottom: 10px;<br>
+			&nbsp;&nbsp;left: 100px;<br>
+		}<br>
+	</p>	
+		
 	
